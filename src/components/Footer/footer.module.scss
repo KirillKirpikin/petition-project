@@ -1,0 +1,20 @@
+.footer{
+    @apply bg-[#000];
+}
+
+.container{
+    @apply mx-1 flex items-center justify-center ;
+
+    h2 {
+        @apply font-normal text-[#FFF] text-[20px] ml-[70px] md:text-[20px] xl:text-[25px] transition-all duration-300;
+    }
+    img {
+        @apply  py-[10px] md:py-[20px] xl:py-[25px];
+    }
+    &:hover{
+        h2{
+            @apply text-[#1E4572];
+        }
+    }
+    
+}

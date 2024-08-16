@@ -1,0 +1,9 @@
+export enum Status{
+    WAITING = 'WAITING',
+    IN_PROGRESS = 'IN_PROGRESS',
+    COMPLITED= 'COMPLITED',
+    ANSWER = 'ANSWER',
+    NOT_SUPPORTED = 'NOT_SUPPORTED',
+    REJECTED = 'REJECTED',
+
+}

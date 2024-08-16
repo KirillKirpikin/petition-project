@@ -1,0 +1,96 @@
+.form{
+    @apply flex flex-col mx-auto px-[30px] md:px-[70px];
+    .top{
+        @apply flex justify-between mb-[80px];
+    }
+
+    .left{
+        @apply w-[45%];
+    }
+    .right{
+        @apply w-[45%];
+    }
+
+    .input{
+        @apply w-full relative;
+        P{
+            @apply text-[22px] font-[700] mb-[10px];
+        }
+        input{
+            @apply w-full mb-[30px] text-[20px] md:text-[23px] px-[25px] rounded-[10px] font-normal text-[#404040] py-[20px];
+
+            &::placeholder{
+                @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[23px];
+            }                
+        }
+        textarea{
+            @apply w-full text-[20px] md:text-[23px] px-[20px]  rounded-[10px] font-normal text-[#404040] resize-none py-2 h-[140px] md:h-[320px] outline-none; 
+            &::placeholder{
+                @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[23px];
+            }
+        }
+        .error{
+            @apply text-red-600 text-[18px] absolute bottom-[-2px] left-[5px];
+        }
+    }
+    .textarea{
+        .error {
+            @apply absolute top-[365px] left-0 text-red-600 text-[16px];
+        }
+    }
+    .btns{
+        @apply flex justify-between;
+        .none{
+            @apply flex-[45%] grow-0;
+        }
+    }
+    .btn{
+        @apply flex-[45%] grow-0;
+        button{
+            @apply flex  items-center  bg-white text-[22px] font-[400] py-[18px] px-[32px] rounded-[40px] transition-all duration-300;
+            
+
+            svg{
+                @apply rotate-[-45deg] ml-[70px] stroke-black transition-all duration-300;
+            }
+
+            &:hover{
+                @apply bg-black text-white underline underline-offset-4;
+                svg{
+                    @apply stroke-[#FFF];
+                } 
+
+            }
+
+        }
+
+    }
+}
+
+
+.modal{
+    @apply w-full md:w-[700px] max-md:h-screen max-md:flex max-md:flex-col max-md:justify-center;
+    .top{
+        @apply flex justify-end;
+    }
+    .title{
+        h3{
+            @apply text-[25px] font-[700] text-[#0C0A00] text-center mb-[15px] md:mb-[35px];
+        }
+        h4{
+            @apply text-[20px] font-[400] text-[#0C0A00] text-center mb-[10px];
+        }
+        h5{
+            @apply text-[20px] font-[400] text-[#D2D2D2] text-center mb-[20px] md:mb-[40px];
+        }
+
+    }
+
+    .eID{
+        @apply bg-black text-white text-[18px] py-3.5 px-8 rounded-xl flex justify-center items-center max-w-[250px] mx-auto mt-10 font-medium transition-all duration-300;
+
+        &:hover{
+            @apply bg-gray-500;
+        }
+    }
+}

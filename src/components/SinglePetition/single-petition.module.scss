@@ -1,0 +1,152 @@
+.single{
+    @apply mx-2 mt-[70px];
+
+}
+.container{
+    @apply mx-auto max-w-[1440px] mb-[100px];
+}
+.body{
+    @apply flex max-md:flex-col-reverse justify-between;
+    .left{
+        @apply flex-[62%] md:mr-[15px]  flex-grow-0 flex-shrink;
+    }
+    .right{
+        @apply flex flex-col min-[506px]:mx-[20%] min-[768px]:mx-0  md:max-w-[436px]  md:flex-[35%] max-md:mb-[50px] flex-grow-0;
+
+        
+        .btn{
+            @apply w-full;
+            button{
+                @apply underline-offset-0 font-[400] text-[22px] border-solid border-black border-[1px] w-full py-[26px] bg-black text-white rounded-[40px] mb-[25px] transition-all duration-300;
+            }
+            &_white{
+                button{
+                    @apply bg-white text-black
+    
+                }
+            }
+            &:hover{
+                button{
+                    @apply bg-black text-white underline underline-offset-4;
+
+                }
+            }
+        }
+
+
+        
+    }
+    .btns{
+        @apply flex-[35%];
+        
+    }
+}
+
+.number{
+    @apply text-[27px] font-[400] text-[#818181] mb-[40px];
+}
+
+.info{
+    .top{
+        h2{
+            @apply text-[35px] font-[700] mb-[40px];
+        }
+        .author{
+            @apply flex items-center mb-[20px];
+            .img{
+                @apply w-[32px] mr-[10px] flex justify-center;
+            }
+            p{
+                @apply text-[25px] font-[500] text-[#000];
+            }
+        }
+    }
+    .about{
+        .btns{
+            @apply flex max-[291px]:flex-col flex-wrap mx-[-5px]  sm:mx-[-20px] mt-[42px] mb-[40px] md:mb-[40px];
+            .filter{
+                @apply min-[294px]:w-1/2 lg:w-1/3 px-[5px] sm:px-[20px] mb-[10px];
+                .btn{
+                    @apply underline-offset-0 border-[1px] border-black bg-[#FFF] font-[400] text-[20px] md:text-[20px] w-[100%] py-[18px] md:py-[28px] rounded-[10px] transition-all duration-200;
+                    &:hover{
+                        @apply bg-black text-[#FFF] underline underline-offset-4;
+                    }
+                
+                }
+                .btn_active{
+                    @apply bg-black text-[#FFF] underline underline-offset-4;
+                }
+
+                .btn_not_active{
+                    @apply bg-[#D2D2D2] text-black border-[1px] border-[#D2D2D2] pointer-events-none;
+
+                }
+            }
+        }
+        .text{
+            @apply text-[25px] font-[400];
+        }
+        .list{
+            @apply mb-[30px];
+            li{
+                @apply p-[25px] flex items-center justify-between border-b-2 border-[#D2D2D2];
+                .user{
+                    @apply text-[30px] font-[500];
+                    span{
+                        @apply mr-[20px];
+                    }
+                }
+                .time{
+                    @apply text-[22px] font-[500]
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    @apply max-md:h-screen w-full md:w-[700px];
+    .top{
+        @apply flex justify-end;
+    }
+    .body{
+        @apply flex flex-col my-auto max-md:h-[90%] max-md:justify-center;
+        h2{
+            @apply text-center text-[25px] font-[700] my-[50px];
+        }
+        h3{
+            @apply  text-[23px] font-[700] mb-[10px];
+        }
+        .img{
+            @apply flex justify-center mb-[50px];
+        }
+        .close{
+            @apply flex justify-center;
+            button{
+                @apply py-[18px] px-[32px] border-solid border-[1px] border-black rounded-[40px] transition-all duration-300;
+                &:hover{
+                  
+                    @apply bg-black text-white underline underline-offset-4;
+                    
+                }
+            }
+        }
+        .text{
+            @apply  relative flex justify-center mb-[50px];
+            textarea{
+                @apply border-black border-solid border-[1px]  w-full text-[20px] md:text-[23px] px-[20px] rounded-[10px] font-normal text-[#404040] resize-none py-2 h-[140px] md:h-[326px] outline-none; 
+                &::placeholder{
+                    @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[23px];
+                }
+            }
+        }
+    }
+
+}
+
+.answer{
+    h2{
+        @apply text-center font-[700] text-[25px] mb-[40px];
+    }
+}
+

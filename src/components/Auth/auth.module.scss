@@ -1,0 +1,45 @@
+.auth{
+    @apply mx-2 my-[50px];
+}
+
+.container{
+    @apply mx-auto max-w-[980px] bg-[#E7EBE6] rounded-2xl py-[35px] md:py-[50px];
+
+}
+.form{
+    @apply flex flex-col max-w-[1137px] mx-auto px-2;
+    h2{
+        @apply text-center font-bold text-[27px] text-[#404040] md:text-[35px] xl:text-[47px] mb-[30px] md:mb-[60px];
+    }
+    .input{
+        @apply flex flex-col items-center relative mx-[10px] sm:mx-[100px] lg:mx-[150px];
+        input{
+            @apply  w-full mb-[30px] text-[20px] md:text-[23px] px-[20px] md:px-[25px] rounded-[10px] font-normal text-[#404040] py-[15px] md:py-[20px];;
+            &::placeholder{
+                @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[23px];
+            }
+        }
+        .error{
+            @apply text-red-600 text-[16px] md:text-[18px] absolute bottom-[8px] left-[5px] font-[400];
+        }
+    }
+    .btns{
+        @apply flex flex-col items-center;
+        .btn{
+            @apply flex justify-end max-[400px]:w-[97%] w-[90%] md:w-[70%];
+            button{
+                @apply underline-offset-0 rounded-[40px] bg-white text-[22px] font-[400] py-[18px] px-[52px] transition-all duration-200;
+                &:hover{
+                    @apply bg-black text-white underline underline-offset-4;
+                }
+            }
+        }
+        a{
+            @apply underline mt-[20px] transition-all duration-200;
+            &:hover{
+                @apply text-[#1E4572] underline-offset-4;
+            }
+        }
+        
+    }
+}

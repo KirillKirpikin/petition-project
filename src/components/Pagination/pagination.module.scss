@@ -1,0 +1,46 @@
+.pagination{
+    @apply flex justify-center;
+    .number{
+        @apply text-[25px] py-[5px] font-[800] px-[5px] md:px-[15px] mx-[20px] transition-all duration-200;
+        &_active{
+            @apply text-[#0075C9] py-[5px] px-[15px];
+        }
+        &:hover{
+            @apply text-[#0075C9] py-[5px] px-[15px];
+        }
+    }
+
+    .btn{
+        svg{
+            // @apply transition-all duration-300;
+            path{
+                @apply fill-[#0075C9] transition-all duration-300;
+            }
+            rect{
+                @apply stroke-[#DFDFDF] transition-all duration-300;
+            }
+        }
+        &:hover{
+            svg{
+                rect{
+                    @apply stroke-[#0075C9];
+                }
+            }
+        }
+    }
+    .btn_next{
+        svg{
+            @apply rotate-180;
+        }
+    }
+
+    .btn_disable{  
+        @apply pointer-events-none;      
+        svg{
+            path{
+                @apply fill-[#DFDFDF];
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,18 @@
+.modal{
+    @apply max-md:h-screen max-md:w-screen h-full w-full z-20 bg-black/20 fixed top-0 left-0 opacity-0 pointer-events-none transition-all duration-500; 
+
+    &__active {
+        @apply opacity-100 pointer-events-auto visible z-50;
+
+    }   
+}
+
+
+.container{
+    @apply flex max-md:h-screen;
+    
+    
+}
+.content {
+    @apply max-md:w-full  flex flex-col p-[20px] md:rounded-[12px] bg-[#F9F9F9] max-h-screen overflow-y-auto flex-initial overflow-hidden;            
+}

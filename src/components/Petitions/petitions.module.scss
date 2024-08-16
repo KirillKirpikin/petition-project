@@ -1,0 +1,56 @@
+.petitions{
+    @apply mx-2 relative;
+}
+.search{
+    @apply absolute top-[320px] md:top-[340px] xl:top-[360px] left-0 z-30 w-full;
+
+    .input{
+        @apply mx-auto max-w-[516px] w-[95%] md:w-[516px] relative;
+        input{
+            @apply rounded-[40px] w-full bg-[#FFF] py-[23px] px-[40px] text-[20px] font-normal text-[#404040] outline-none;
+    
+            &::placeholder{
+                @apply font-normal text-[#B1B1B1] text-[20px];
+            }
+            
+        }
+        img{
+            @apply absolute top-[35%] right-[41px];
+        }
+    }
+}
+
+
+.container{
+    @apply mx-auto max-w-[1440px] mb-[100px];
+    h2{
+        @apply text-[35px] font-[700] text-center mt-[100px];
+    }
+}
+
+.filters {
+    @apply flex max-[291px]:flex-col flex-wrap mx-[-5px]  sm:mx-[-20px] mt-[42px] mb-[40px] md:mb-[40px];
+    .filter{
+        @apply min-[294px]:w-1/2 lg:w-1/4 px-[5px] sm:px-[20px] mb-[10px];
+        .btn{
+            @apply underline-offset-0 border-[1px] border-black bg-[#FFF] font-[400] text-[20px] md:text-[20px] w-[100%] py-[18px] md:py-[28px] rounded-[10px] transition-all duration-200;
+            &:hover{
+                @apply bg-black text-[#FFF] underline underline-offset-4;
+            }
+        
+        }
+        .btn_active{
+            @apply bg-black text-[#FFF] underline underline-offset-4;
+        }
+
+        
+    }
+}
+
+.list{
+    @apply flex flex-wrap mt-[46px] mx-[-10px] xl:mx-[-33px] ;  
+}
+
+.not_found{
+    @apply text-[20px] mt-[46px] h-[222px] md:h-[392px] flex justify-center items-center md:text-[25px] w-full; 
+}

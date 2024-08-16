@@ -1,0 +1,26 @@
+.share{
+    @apply mt-[30px] md:mt-[70px] flex flex-col items-center;
+    h3{
+        @apply font-[500] text-[25px] mb-[40px];
+    }
+    .btns{
+        .mail{
+            @apply mx-[48px];
+        }
+        button{
+            svg{
+                path{
+                    @apply fill-black transition-all duration-200;
+                }
+            }
+            &:hover{                
+                svg{
+                    path{
+                        @apply fill-[#186a84];
+                    }
+                }
+
+            }
+        }
+    }
+}

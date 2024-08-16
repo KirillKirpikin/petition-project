@@ -1,0 +1,10 @@
+.btn{
+    @apply my-20 max-w-xl mx-auto w-full p-10 rounded-xl border flex justify-center items-center;
+
+    button{
+        @apply text-center text-white bg-black py-2.5 px-5 rounded-xl text-[18px] tracking-wide font-medium transition-all duration-300;
+        &:hover{
+            @apply bg-gray-500;
+        }    
+    }
+}

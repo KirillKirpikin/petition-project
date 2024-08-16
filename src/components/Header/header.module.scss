@@ -1,0 +1,94 @@
+
+.header{
+    @apply overflow-hidden w-full relative;
+    background-color: rgb(0,58,100);
+    .admin{
+      @apply absolute top-[20px] right-[5%] z-50;
+      a{
+        @apply font-[400]  underline-offset-0 bg-white rounded-[20px] px-[15px] py-[10px] duration-300 transition-all;
+        &:hover{
+          @apply underline underline-offset-4
+        }
+
+      }
+      button{
+        @apply font-[400] ml-[20px] bg-white rounded-[20px] px-[15px] py-[10px]  duration-300 transition-all;
+        &:hover{
+          @apply bg-red-500 text-white;
+        }
+      }
+    }
+
+}
+
+.container{
+    @apply relative flex flex-col items-center z-20 mt-[123px];
+    img {
+        @apply mb-[25px];
+    }
+    h1 {
+        @apply font-[500] text-[40px] ml-[20px] md:text-[60px] xl:text-[80px] text-[#FFF];  
+    }
+    
+}
+
+.search{
+    @apply flex flex-col items-center z-20 relative pt-[25px] pb-[50px];
+    
+    .btn{
+        @apply flex items-center px-[32px] py-[18px] bg-[#FFF] rounded-[40px] transition-all duration-300;
+        p{
+            @apply underline-offset-0 mr-[30px] text-[22px] font-normal transition-all duration-200;
+        }
+        &:hover{
+            p{
+                @apply underline underline-offset-4;
+            }
+        }
+    }
+}
+
+.ocean { 
+    z-index: 1;
+    height: 5%;
+    width:100%;
+    position:absolute;
+    top:100%;
+    left:0;
+    background: #015871;
+  }
+  
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    // background-size: 150%;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
